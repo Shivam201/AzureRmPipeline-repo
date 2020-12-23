@@ -1,3 +1,4 @@
+
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
@@ -20,6 +21,6 @@ steps:
     location: 'East US'
     templateLocation: 'Linked artifact'
     csmFile: 'azuredeploy.json'
-    overrideParameters: '-projectName Sample1 -linkedTemplateUri https://github.com/Shivam201/AzureRmPipeline-repo/blob/main/azuredeploy.json'
+    overrideParameters: '-projectName {{'Sample1'}} -linkedTemplateUri {{'https://github.com/Shivam201/AzureRmPipeline-repo/blob/main/azuredeploy.json'}}'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
